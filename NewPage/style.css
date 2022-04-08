@@ -1,0 +1,93 @@
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            background-color: azure;
+            position: fixed;
+            opacity: 0.8;
+        }
+        .logo2{
+            width: 10%;
+            height: 60%;
+            display: block;
+        }
+        .img1{
+            width: 50%;
+            height: 50%;
+            display: block;
+            padding-top: 100px;
+            margin-right: 240px;
+            float: left;
+            margin: 0 1.5%;
+            width: 63%;
+        }
+        .figure{
+            display: grid;
+            grid-template-columns: 35% 35%;
+            justify-items: center;
+        }
+        .figure_img{
+            width: 35%;
+            height: 70%;
+            display: inline;
+        }
+        .flowers{
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            border: 1px solid peachpuff;
+        }
+        .types{
+            margin: 50px;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            background-color: antiquewhite;
+            padding: 5px;
+            grid-gap: 10px;
+        }
+        .aside{
+            float: right;
+            margin: 0 1.5%;
+            width: 30%;
+            padding-top: 300px;
+        }
+        .article{
+            clear: both;
+        }
+        .list2{
+            font-family: 'Dancing Script', cursive;
+            font-size: 25px;
+        }
+        p{
+            font-family: 'Abel', sans-serif;
+            font-size: 20px;
+        }
+        h1,h2{
+            font-family: 'Dancing Script', cursive;
+        }
+        a{
+            font-family: 'Dancing Script', cursive;
+            font-size: 45px;
+            text-decoration: none;
+        }
+        a:hover{
+            color: blueviolet;
+        }
+        h1{
+            padding-top: 50px;
+            text-align: center;
+        }
+        .logo{
+            width: 5%;
+            height: 5%;
+        }
+        .list{
+            list-style: none;
+        }
+        .list1{
+            padding-right: 300px;
+        }
+        
