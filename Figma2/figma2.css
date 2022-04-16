@@ -1,5 +1,4 @@
 body{
-    width: 1440px;
     background-color: #FFFFFF;
     @font-face {
         font-family: 'Larsseit';
@@ -12,6 +11,10 @@ body{
         font-weight: 100;
         font-style: normal;
     }
+}
+.container{
+    width: 1440px;
+    margin: 0px auto;
 }
 .header{
     height: 840px;

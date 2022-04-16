@@ -1,0 +1,122 @@
+body {
+    font-size: 1vw;
+    }
+    .container {
+        width: 80vw;
+        height: 40vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 30% 80% 40% 40%;
+    text-align: center;
+    }
+    .header,
+    .footer {
+    background-color: lightgrey;
+    }
+    .header {
+    grid-area: 1/1/2/3;
+    }
+    .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background-color: beige;
+    grid-gap: 10px;
+    }
+    .main__p {
+    grid-area: 1/2/2/4;
+    }
+    .main-section1 {
+    grid-area: 3/1/4/3;
+    background-color: antiquewhite;
+    }
+    .main-section2 {
+    grid-area: 3/3/4/5;
+    background-color: antiquewhite;
+    }
+    .main-section3 {
+    grid-area: 4/1/5/5;
+    background-color: antiquewhite;
+    }
+    .aside {
+    grid-area: 2/2/3/3;
+    padding-top: 25px;
+    background-color: lightgreen;
+    }
+    .footer {
+    grid-area: 3/1/4/3;
+    }
+    .footer--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    }
+    .footer-section {
+    padding-top: 5px;
+    width: 50%;
+    height: 25%;
+    background-color: white;
+    }
+    @media (min-width: 1024px) {
+        .container {
+            width: 100vw;
+            height: 60vh;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 50% 30%;
+        grid-template-rows: 30% 80% 40%;
+        text-align: center;
+        }
+        .footer {
+            grid-area: 3/1/4/3;
+            }
+            .footer--grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+            justify-items: center;
+            }
+            .footer-section {
+            padding-top: 5px;
+            width: 50%;
+            height: 25%;
+            background-color: white;
+            }
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .footer {
+            grid-area: 4/1/5/3;
+            width: 80%;
+            }
+        .header{
+            width: 80%;
+        }
+        .main{
+            width: 128%;
+        }
+        .aside{
+            grid-area: 3/1/5/2;
+            width: 128%;
+            height: 40%;
+        }
+
+
+    }
+    @media (max-width: 767px) {
+        .footer{
+            display: none;
+        }
+        .header{
+            width: 50%;
+        }
+        .main{
+            width: 80%;
+        }
+        .aside{
+            grid-area: 3/1/5/2;
+            width: 80%;
+            height: 40%;
+        }
+}
