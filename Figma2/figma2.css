@@ -1,57 +1,41 @@
 body{
     background-color: #FFFFFF;
-    @font-face {
-        font-family: 'Larsseit';
-        src: url('Larsseit-Thin.eot');
-        src: local('Larsseit Thin'), local('Larsseit-Thin'),
-            url('Larsseit-Thin.eot?#iefix') format('embedded-opentype'),
-            url('Larsseit-Thin.woff2') format('woff2'),
-            url('Larsseit-Thin.woff') format('woff'),
-            url('Larsseit-Thin.ttf') format('truetype');
-        font-weight: 100;
-        font-style: normal;
     }
-}
-.container{
-    width: 1440px;
+    .wrapper{
+    min-height: 100%;
+    overflow: hidden;
+    }
+    ._container{
+    max-width: 1440px;
     margin: 0px auto;
-}
-.header{
+    }
+    .header{
     height: 840px;
-    width: 1117px;
-    margin-left: 0px;
-    margin-top: 0px;
-    border-radius: 0px;
     background-color: #F4F9E2;
-}
-.nav{
+    }
+    .nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-.wrapper{
-    margin-top: 38px;
-    margin-right: 277px;
-    padding-top: 40px;
-}
-.nav__list{
+    align-items: baseline;
+    padding-top: 20px;
+    }
+    .nav__list{
     list-style-type: none;
     height: 14px;
     width: 233px;
-    border-radius: 0px;
     font-size: 14px;
-}
-.nav_list_link{
+    }
+    .nav_list_link{
     padding-right: 15px;
     text-decoration: none;
-}
-.nav__heading{
+    }
+    .nav__heading{
     height: 27px;
-    width: 484px;
-    padding-left: 179px;   
+    padding-left: 179px;
     font-size: 24px;
     color: #62D0DF;
-}
-.wrapper__btn{
+    }
+    .wrapper__btn{
     margin-left: 420px;
     height: 50px;
     width: 150px;
@@ -60,57 +44,53 @@ body{
     background-color: #62D0DF;
     font-size: 14px;
     color: #FFFFFF;
-}
-.wrapper__btn:hover{
+    }
+    .wrapper__btn:hover{
     color: darkblue;
-}
-.container__heading{
+    }
+    .Thrivetalk__heading{
     box-sizing: border-box;
     display: block;
     height: 64px;
-    width: 484px;
     margin-left: 179px;
     margin-top: 150px;
     padding-bottom: 5px;
     font-size: 24px;
     color: #62D0DF;
-}
-.container__h1{
+    }
+    .Thrivetalk__h1{
     box-sizing: border-box;
     margin-left: 179px;
     padding-top: 5px;
     height: 167px;
-    width: 484px;
     color: #22356F;
-}
-.container__p{
+    }
+    .Thrivetalk__p{
     margin-left: 179px;
     height: 161px;
-    width: 469px;
     font-size: 24px;
     color: #22356F;
-}
-.header__img{
-position: absolute;
-right: 50px; bottom: 20px; top: 170.66px; 
-width: 807px;
-height: 544.93px;
-border-radius: 312.16px;
-}
-.header__img2{
+    width: 469px;
+    }
+    .header__img{
+    position: absolute;
+    right: 50px; bottom: 20px; top: 170.66px;
+    height: 544.93px;
+    border-radius: 312.16px;
+    }
+    .header__img2{
     position: absolute;
     height: 607px;
-    width: 522px;
     right: 50px; top: 25%;
     border-radius: 312.16px;
-}
-.container-questions{
+    }
+    .Thrivetalk-questions{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 179px;
-    align-items: baseline; 
-}
-.container-questions__1{
+    align-items: baseline;
+    }
+    .Thrivetalk-questions__1{
     box-sizing: border-box;
     padding-top: 15px;
     height: 50px;
@@ -118,240 +98,621 @@ border-radius: 312.16px;
     text-align: center;
     color: #FFFFFF;
     background-color: #F9B640;
-}
-.container-questions__2{
+    }
+    .Thrivetalk-questions__2{
     height: 43px;
     width: 150px;
     color: #FAB63E;
-}
-.article{
-    box-sizing: border-box;
+    }
+    
+    /* header */
+    
+    .why_thrive{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    grid-gap: 100px;
-    height: 607px;
-    width: 1440px;
     background-color: #62D0DF;
-}
-.article-main{
-margin-left: 80px;
-}
-.article-main__h2{
+    }
+    .why_thrive__container{
+    margin-left: 80px;
+    }
+    .why_thrive__container__h2{
     margin-left: 179px;
     height: 51px;
     width: 223px;
     color: #FFFFFF;
     font-size: 36px;
-}
-.article-main__p{
+    }
+    .why_thrive__container__p{
     box-sizing: border-box;
     margin-left: 179px;
     padding-top: 75px;
     height: 235px;
-    width: 555px;
     color: #FFFFFF;
     font-size: 24px;
-}
-.article__img{
-    box-sizing: border-box;
-    height: 604px;
-    width: 525px;
-}
-.article2{
+    width: 555px;
+    }
+    .why_thrive__container__img{
+    grid-column: 3/4;
+    }
+    .about_us{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: baseline;
     align-content: flex-end;
-    width: 1440px;
     height: 361px;
     background: #FFFFFF;
-}
-.article2__span{
+    }
+    .about_us__span{
     padding-left: 106px;
     height: 210px;
     width: 93px;
     color: #22356F;
     font-size: 16px;
-}
-.article2__p{
+    }
+    .about_us__p{
     box-sizing: border-box;
-    height: 210px;
     width: 592px;
+    height: 210px;
     font-size: 24px;
     color: #22356F;
-}
-.section{
+    }
+    .services__container{
     display: flex;
     margin-bottom: 120px;
     margin-top: 120px;
-}
-.block{
+    }
+    .block{
     height: 360px;
     width: 360px;
     color: #FFFFFF;
     font-size: 32px;
-}
-.section-block1{
+    }
+    .services-weight{
     background-color: #FFE2DE;
-}
-.section-block2{
+    }
+    .services-running{
     background-color: #C4E769;
-}
-.section-block3{
+    }
+    .services-pumping{
     background-color: #62D0DF;
-}
-.section-block4{
+    }
+    .service-pumping_iron{
     background-color: #0052C1;
-}
-.section2{
+    }
+    .health__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1440px;
     margin-bottom: 22px;
-}
-.block2{
-    height: 480px;
-    width: 480px;
+    }
+    .block2{
+    height: 40vh;
+    width: 40vh;
     font-size: 32px;
     color: #FFFFFF;
-}
-.section2-block1{
+    }
+    .health-physical{
     background-color: #22356F;
-}
-.section2-block2{
+    }
+    .health-mental{
     background-color: #0052C1;
-}
-.section2-block3{
+    }
+    .health-nutrition{
     background-image: url(Img.Figma/joghurt.png);
-}
-.section2-block4{
+    }
+    .health-gymnastic{
     background-color: #62D0DF;
-}
-.section2-block5{
+    }
+    .health-crossfit{
     background-color: #DEE1FF;
-}
-.section2-block6{
+    }
+    .health-aerobics{
     background-color: #8F00FF;
-}
-.section3{
+    }
+    .facts__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1440px;
     margin-bottom: 40px;
-}
-.section3-block{
-    height: 240px;
-    width: 480px;
-}
-.section3-block__h3{
+    }
+    .facts__h3{
     margin-left: 105px;
     height: 36px;
     width: 234px;
     font-size: 28px;
     color: #22356F;
-}
-.section3-block__p{
+    }
+    .facts__p{
     margin-left: 105px;
     height: 84px;
     width: 298px;
     color: rgba(34, 53, 111, 0.5);
     font-size: 16px;
-}
-.article3{
-    display: flex;
+    }
+    .MDD__container{
+    display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
-    height: 800px;
-    width: 1440px;
-}
-.article3-info{
+    }
+    .MDD-info{
     margin-left: 106px;
     margin-top: 103px;
-}
-
-.article3__img{
+    }
+    .MDD__img{
     height: 800px;
     width: 480px;
-}
-.article3-info__p{
+    }
+    .MDD-info__p{
     padding-bottom: 152px;
     padding-top: 225px;
     font-size: 36px;
     color: #22356F;
-}
-.article3-info__span1{
+    }
+    .MDD-info__span1{
     padding-top: 103px;
     color: #22356F;
     font-size: 16px;
-}
-.article3-info__span2{
+    }
+    .MDD-info__span2{
     padding-right: 333px;
     padding-bottom: 42px;
     font-size: 16px;
     color: #FAB63E;
-}
-.article4{
+    }
+    .contact_us__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 800px;
-    width: 1440px;
-background-color: #22356F;
-}
-.article4__img{
+    background-color: #22356F;
+    }
+    .contact_us__img{
     grid-column: 3/4;
-}
-.article4-info{
+    }
+    .contact_us-info{
     grid-row: 1/2;
     padding-top: 103px;
     margin-left: 180px;
-}
-.article4-info__span{
+    }
+    .contact_us-info__span{
     height: 14px;
     width: 108px;
     font-size: 14px;
     color: #FFFFFF;
-}
-.article4-info__h3{
+    }
+    .contact_us-info__h3{
     padding-top: 230px;
     height: 66px;
-    width: 704px;
     box-sizing: border-box;
     font-size: 64px;
     color: #FFFFFF;
-}
-.article4-info__p{
+    }
+    .contact_us-info__p{
     box-sizing: border-box;
     padding-top: 75px;
     height: 253px;
-    width: 579px;
     color: #FFFFFF;
     font-size: 36px;
-}
-.article4-info__span2{
+    width: 579px;
+    }
+    .contact_us-info__span2{
     box-sizing: border-box;
     padding-top: 17px;
     height: 43px;
-    width: 518px;
     color: #62D0DF;
     font-size: 16px;
-}
-.footer{
-    display: flex;
+    }
+    .footer__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-content: space-between;
     height: 380px;
-    width: 1443px;
-}
-.footer-info__h4{
+    }
+    .footer-info__h4{
     height: 48px;
     width: 240px;
     font-size: 14px;
     color: #22356F;
-}
-.footer-info__p{
+    }
+    .footer-info__p{
     height: 115px;
     width: 207px;
     color: rgba(34, 53, 111, 0.5);
     font-size: 14px;
-}
+    }
+    .copyright{
+    padding: 32px 898px 26px 194px;
+    grid-area: 2/1/3/5;
+    background-color: #62D0DF;
+    color: #FFFFFF;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        .nav{
+            display: flex;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            align-items: baseline;
+            }
+            .nav__list{
+            display: flex;
+            list-style-type: none;
+            height: 14px;
+            width: 200px;
+            font-size: 4vw;
+            grid-area: 1/2/3/5;
+            }
+            .nav__heading{
+            height: 27px;
+            padding-left: 50px;
+            font-size: 6vw;
+            color: #62D0DF;
+            }
+            .wrapper__btn{
+                margin-left: 240px;
+                font-size: 1,5vw;
+            }
+            .Thrivetalk__heading{
+                box-sizing: border-box;
+                display: block;
+                height: 64px;
+                margin-left: 50px;
+                margin-top: 150px;
+                padding-bottom: 5px;
+                font-size: 6vw;
+                color: #62D0DF;
+                }
+                .Thrivetalk__h1{
+                box-sizing: border-box;
+                margin-left: 50px;
+                padding-top: 5px;
+                height: 167px;
+                color: #22356F;
+                }
+                .Thrivetalk__p{
+                margin-left: 50px;
+                height: 161px;
+                font-size: 3vw;
+                color: #22356F;
+                width: 469px;
+                }
+                .Thrivetalk-questions{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-left: 50px;
+                    align-items: baseline;
+                    }
+                    .Thrivetalk-questions__1{
+                    box-sizing: border-box;
+                    padding-top: 15px;
+                    height: 50px;
+                    width: 150px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    background-color: #F9B640;
+                    }
+                    .Thrivetalk-questions__2{
+                    height: 43px;
+                    width: 150px;
+                    color: #FAB63E;
+                    }
+    .why_thrive{
+    height: 50vw;
+    grid-template-rows: 1fr 1fr;
+    }
+    .why_thrive__container{
+    margin-left: 10px;
+    }
+    .why_thrive__container__h2,
+    .why_thrive__container__p{
+        margin-left: 50px;
+        font-size: 2vw;
+    }
+    .why_thrive__container__p{
+        width: 200px;
+        padding-top: 10px;
+        height: 350px;
+    }
+    .why_thrive__container__img{
+        width: 65%;
+        position: relative;
+        bottom: 20px;
+        left: 140px;
+    }
+    .about_us{
+        display: flex;
+        align-items: baseline;
+        align-content: flex-end;
+        height: 361px;
+        background: #FFFFFF;
+        margin-top: 0px;
+        margin-bottom: 60px;
+        }
+        .about_us__span{
+        display: block;
+        }
+        .about_us__p{
+        box-sizing: border-box;
+        width: 600px;
+        font-size: 4vw;
+        color: #22356F;
+        text-align: center;
+        }
+    .MDD-info__p,
+    .MDD-info__span1,
+    .MDD-info__span2
+    {
+    font-size: 2vw;
+    }
+    .services__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    }
+    .block{
+    height: 150%;
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+    }
+    .health__container{
+    justify-items: center
+    }
+    .block2{
+    height: 20vh;
+    width: 23vh;
+    font-size: 3vw;
+    text-align: center;
+    }
+    .facts__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    }
+    .facts__p{
+        width: 30vh;
+    }
+    .MDD-info{
+    margin-left: 10px;
+    margin-top: 10px;
+    }
+    .MDD-info__p{
+        padding-bottom: 80px;
+        font-size: 3vw;
+    }
+    .MDD__img{
+    max-width: 30vh;
+    max-height: 50vh;
+    }
+    .MDD__container{
+    display: inline-grid;
+    max-width: 40vh;
+    max-height: 60vh;
+    }
+    .facts__h3,
+    .facts__p{
+    font-size: 3vw;
+    margin-left: 0px;
+    }
+    .contact_us-info{
+        margin-left: 50px;
+    }
+    .contact_us-info__span{
+        font-size: 3vw;
+    }
+    .contact_us-info__h3{
+        font-size: 4vw;
+    }
+    .contact_us-info__p{
+        font-size: 3vw;
+        width: 300px;
+    }
+    .contact_us__img{
+        display: none;
+    }
+    .footer__container{
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        justify-items: baseline;
+        margin-right: 50px;
+        justify-content: end;
+        }
+        .footer-info__h4{
+        height: 48px;
+        width: 240px;
+        font-size: 14px;
+        color: #22356F;
+        }
+        .footer-info__p{
+        height: 115px;
+        width: 207px;
+        color: rgba(34, 53, 111, 0.5);
+        font-size: 14px;
+        }
+        .copyright{
+        display: none;
+        }
+    .footer__img{
+        display: none;
+    }
+    }
+    
+    @media screen and (max-width: 767px){
+        .nav{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: baseline;
+            }
+            .nav__list{
+            list-style-type: none;
+            height: 14px;
+            width: 233px;
+            font-size: 2vw;
+            }
+            .nav__heading{
+            height: 27px;
+            padding-left: 50px;
+            font-size: 6vw;
+            color: #62D0DF;
+            }
+            .Thrivetalk__heading{
+                box-sizing: border-box;
+                display: block;
+                height: 64px;
+                margin-left: 50px;
+                margin-top: 150px;
+                padding-bottom: 5px;
+                font-size: 7vw;
+                color: #62D0DF;
+                }
+                .Thrivetalk__h1{
+                box-sizing: border-box;
+                margin-left: 50px;
+                padding-top: 5px;
+                height: 167px;
+                color: #22356F;
+                }
+                .Thrivetalk__p{
+                margin-left: 50px;
+                height: 161px;
+                font-size: 4vw;
+                color: #22356F;
+                width: 469px;
+                }
+                .Thrivetalk-questions{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-left: 50px;
+                    align-items: baseline;
+                    }
+                    .Thrivetalk-questions__1{
+                    box-sizing: border-box;
+                    padding-top: 15px;
+                    height: 50px;
+                    width: 150px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    background-color: #F9B640;
+                    }
+                    .Thrivetalk-questions__2{
+                    height: 43px;
+                    width: 150px;
+                    color: #FAB63E;
+                    }
+    .why_thrive{
+    height: 40vw;
+    grid-template-rows: 1fr 1fr;
+    }
+    .why_thrive__container{
+    margin-left: 10px;
+    }
+    .why_thrive__container__h2,
+    .why_thrive__container__p{
+        margin-left: 50px;
+        font-size: 2vw;
+    }
+    .why_thrive__container__p{
+        width: 200px;
+        padding-top: 10px;
+    }
+    .why_thrive__container__img{
+        width: 70%;
+        position: relative;
+        bottom: 50px;
+        left: 70px;
+    }
+    .about_us{
+        display: flex;
+        align-items: baseline;
+        align-content: flex-end;
+        height: 361px;
+        background: #FFFFFF;
+        margin-top: 150px;
+        }
+        .about_us__span{
+        display: none;
+        }
+        .about_us__p{
+        box-sizing: border-box;
+        width: 600px;
+        font-size: 4vw;
+        color: #22356F;
+        text-align: center;
+        }
+    .MDD-info__p,
+    .MDD-info__span1,
+    .MDD-info__span2
+    {
+    font-size: 2vw;
+    }
+    .services__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    }
+    .block{
+    height: 150%;
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    }
+    .health__container{
+    justify-items: center
+    }
+    .block2{
+    height: 15vh;
+    width: 25vh;
+    font-size: 3vw;
+    text-align: center;
+    }
+    .facts__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    }
+    .facts__p{
+        width: 20vh;
+    }
+    .MDD-info{
+    margin-left: 10px;
+    margin-top: 10px;
+    }
+    .MDD-info__p{
+        padding-bottom: 40px;
+    }
+    .MDD__img{
+    max-width: 40vh;
+    max-height: 60vh;
+    }
+    .MDD__container{
+    display: inline-grid;
+    max-width: 40vh;
+    max-height: 60vh;
+    }
+    .facts__h3,
+    .facts__p{
+    font-size: 2vw;
+    margin-left: 0px;
+    }
+    .contact_us-info{
+        margin-left: 50px;
+    }
+    .contact_us-info__span{
+        font-size: 3vw;
+    }
+    .contact_us-info__h3{
+        font-size: 5vw;
+    }
+    .contact_us-info__p{
+        font-size: 4vw;
+        width: 300px;
+    }
+    .contact_us__img{
+        display: none;
+    }
+    .footer__container{
+    display: none;
+    }
+    }
